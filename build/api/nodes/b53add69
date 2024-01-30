@@ -1,0 +1,10 @@
+{
+  "code": null,
+  "filepath": null,
+  "parameters": {},
+  "run_command": null,
+  "inputs": [],
+  "outputs": [
+    "my_output"
+  ]
+}

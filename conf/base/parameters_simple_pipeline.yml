@@ -1,0 +1,6 @@
+# This is a boilerplate parameters config generated for pipeline 'simple_pipeline'
+# using Kedro 0.19.2.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.2/configuration/parameters.html
+example_param: "my print statement"

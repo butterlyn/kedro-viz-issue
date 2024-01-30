@@ -1,0 +1,14 @@
+{
+  "code": "                func=lambda x: x,\n",
+  "filepath": "kedro-viz-issue\\src\\new_kedro_project\\pipelines\\simple_pipeline\\pipeline.py",
+  "parameters": {
+    "example_param": "my print statement"
+  },
+  "run_command": null,
+  "inputs": [
+    "params:example_param"
+  ],
+  "outputs": [
+    "my_output"
+  ]
+}

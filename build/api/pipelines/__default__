@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "b8a79de8",
+      "name": "<lambda>",
+      "tags": [],
+      "pipelines": [
+        "__default__",
+        "simple_pipeline"
+      ],
+      "type": "task",
+      "modular_pipelines": [],
+      "parameters": {
+        "example_param": "my print statement"
+      }
+    },
+    {
+      "id": "9b6218cf",
+      "name": "params:example_param",
+      "tags": [],
+      "pipelines": [
+        "__default__",
+        "simple_pipeline"
+      ],
+      "type": "parameters",
+      "modular_pipelines": [],
+      "layer": null,
+      "dataset_type": null,
+      "stats": null
+    },
+    {
+      "id": "d5739068",
+      "name": "my_output",
+      "tags": [],
+      "pipelines": [
+        "__default__",
+        "simple_pipeline"
+      ],
+      "type": "data",
+      "modular_pipelines": [],
+      "layer": null,
+      "dataset_type": "io.memory_dataset.MemoryDataset",
+      "stats": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "b8a79de8",
+      "target": "d5739068"
+    },
+    {
+      "source": "9b6218cf",
+      "target": "b8a79de8"
+    }
+  ],
+  "layers": [],
+  "tags": [],
+  "pipelines": [
+    {
+      "id": "__default__",
+      "name": "__default__"
+    },
+    {
+      "id": "simple_pipeline",
+      "name": "simple_pipeline"
+    }
+  ],
+  "modular_pipelines": {
+    "__root__": {
+      "id": "__root__",
+      "name": "__root__",
+      "inputs": [],
+      "outputs": [],
+      "children": [
+        {
+          "id": "d5739068",
+          "type": "data"
+        },
+        {
+          "id": "9b6218cf",
+          "type": "parameters"
+        },
+        {
+          "id": "b8a79de8",
+          "type": "task"
+        }
+      ]
+    }
+  },
+  "selected_pipeline": "__default__"
+}
